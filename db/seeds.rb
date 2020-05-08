@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(email: "dcoci@email.com", name: "Dan Coci", password: "password")
-User.create(email: "wcoci@email.com", name: "Winston Coci", password: "password")
+User.create(email: "wcoci@email.com", name: "Winston Coci", password: "password1")
 
 Supplier.create(name: "World Rugby Shop", website_url: "https://www.worldrugbyshop.com/")
 Supplier.create(name: "South Africa Rugby Shop", website_url: "https://sarugbyshop.co.za/")
@@ -44,11 +44,11 @@ Country.create(name: "New Zealand", nickname: "All Blacks", world_ranking: 2, im
 Country.create(name: "England", nickname: "", world_ranking: 3, image_url: "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2019/08/GettyImages-1168574689.jpg", video_url: "https://youtu.be/QXokTpJGduw")
 Country.create(name: "Ireland", nickname: "", world_ranking: 4, image_url: "https://media.balls.ie/uploads/2017/05/10090002/1266007.jpg", video_url: "https://youtu.be/kEVVkd_oGx4")
 Country.create(name: "France", nickname: "Le XV de France", world_ranking: 5, image_url: "https://rugby365.com/wp/wp-content/uploads/2019/09/France-v-Argentina-WC-2019-1024x576.png", image_url: "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2019/09/GettyImages-1168573849.jpg", video_url: "https://youtu.be/a7pUQj-NqPo")
-Country.create(name: "Wales", nickname: "", world_ranking: 6, video_url: "https://youtu.be/B2jDcOTo8-w")
+Country.create(name: "Wales", nickname: "", world_ranking: 6, image_url: "https://cdn.rugbypass.com/wp/wp-content/uploads/2019/09/Wales.jpg", video_url: "https://youtu.be/B2jDcOTo8-w")
 Country.create(name: "Australia", nickname: "Wallabies", world_ranking: 7, image_url: "https://cdn.newsapi.com.au/image/v1/1c0fab49b3d13ee413c108d996792e41?width=650", video_url: "https://youtu.be/pd27tuX9WR8")
 Country.create(name: "Scotland", nickname: "", world_ranking: 8, image_url: "https://news.stv.tv/wp-content/uploads/2019/11/archive-1440462-analysis-of-scotland-s-rugby-world-cup-squad-1.jpg", video_url: "https://youtu.be/QrIAp-ufDs0")
 Country.create(name: "Japan", nickname: "The Brave Blossoms", world_ranking: 9, image_url: "https://cdn.mainichi.jp/vol1/2019/10/13/20191013p2g00m0sp118000p/8.jpg?1", video_url: "https://youtu.be/FhMKmfEmMZA")
-Country.create(name: "Argentina", nickname: "Los Pumas", world_ranking: 10, video_url: "https://youtu.be/WArtLWIykfk")
+Country.create(name: "Argentina", nickname: "Los Pumas", world_ranking: 10, image_url: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/09/06/10/argentina.jpg", video_url: "https://youtu.be/WArtLWIykfk")
 Country.create(name: "Fiji", nickname: "The Flying Fijians", world_ranking: 11, image_url: "https://www.rnz.co.nz/assets/news/208762/eight_col_IMG_4331.JPG?1568961605", video_url: "https://youtu.be/L5zuiEFkM50")
 Country.create(name: "Georgia", nickname: "The Lelos", world_ranking: 12, image_url: "https://resources.stuff.co.nz/content/dam/images/1/x/7/5/b/u/image.related.StuffLandscapeSixteenByNine.1420x800.1x72wa.png/1569880553600.jpg", video_url: "https://youtu.be/Ubs5wvVOibc")
 Country.create(name: "Tonga", nickname: "Ikale Tahi (Sea Eagles)", world_ranking: 13, image_url: "https://i.redd.it/t76omm1a9dl31.jpg", video_url: "https://youtu.be/9o9ubDBWuVM")
