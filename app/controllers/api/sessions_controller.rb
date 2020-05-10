@@ -4,15 +4,15 @@ class Api::SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       jwt = JWT.encode(
         {
-          user: user.id, # the data to encode
+          user_id: user.id, # the data to encode
           exp: 24.hours.from_now.to_i, # the expiration time
         },
-        "random", # the secret key
+        Rails.application.credentials.fetch(:secret_key_base), # the secret key
         "HS256" # the encryption algorithm
       )
-      render json: { jwt: jwt, email: user.email }, status: :created
+      render json: { jwt: jwt, email: user.email, user_id: user.id }, status: :created
     else
-      render json: { message: "Email or Password is incorrect" }, status: :unauthorized
+      render json: {}, status: :unauthorized
     end
   end
 end

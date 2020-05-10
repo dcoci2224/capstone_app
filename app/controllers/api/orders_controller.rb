@@ -1,13 +1,13 @@
 class Api::OrdersController < ApplicationController
-  before_action :authenticate_user #method from application controller
+  #before_action :authenticate_user #method from application controller
 
   def index
-    @orders = current_user.orders
+    @orders = Order.all
     render "index.json.jb"
   end
 
   def create
-    carted_products = current_user.carted_products.where(status: "carted")
+    @carted_products = current_user.carted_products.where(status: "carted")
 
     calculated_subtotal = 0
     calculated_tax = 0
@@ -25,7 +25,7 @@ class Api::OrdersController < ApplicationController
       total: calculated_total,
     )
     if @order.save
-      carted_products.update_all(status: "purchased", order_id: @order.id)
+      @carted_products.update_all(status: "purchased", order_id: @order.id)
       render "show.json.jb"
     else
       render json: { errors: @order.errors.full_messages }, status: :unprocessable_entity
