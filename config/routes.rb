@@ -17,5 +17,8 @@ Rails.application.routes.draw do
     delete "/users/:id" => "users#destroy"
 
     get "/countries" => "countries#index"
+    post "/countries" => "countries#create"
+    get "/countries/:id" => "countries#show"
+    patch "/countries/:id" => "countries#update"
   end
 end

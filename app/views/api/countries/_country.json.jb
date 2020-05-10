@@ -1,4 +1,5 @@
 {
+  id: country.id,
   name: country.name,
   nickname: country.nickname,
   world_ranking: country.world_ranking,
