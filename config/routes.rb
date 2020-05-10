@@ -16,9 +16,12 @@ Rails.application.routes.draw do
     patch "/users/:id" => "users#update"
     delete "/users/:id" => "users#destroy"
 
+    post "/sessions" => "sessions#create"
+
     get "/countries" => "countries#index"
     post "/countries" => "countries#create"
     get "/countries/:id" => "countries#show"
     patch "/countries/:id" => "countries#update"
+    delete "/countries/:id" => "countries#destroy"
   end
 end
