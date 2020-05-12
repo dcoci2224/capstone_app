@@ -5,4 +5,5 @@
   world_ranking: country.world_ranking,
   image_url: country.image_url,
   video_url: country.video_url,
+  products: country.products,
 }

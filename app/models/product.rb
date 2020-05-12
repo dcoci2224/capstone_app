@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :price, presence: true, numericality: { greater_than: 0 }
-  validates :description, length: { in: 10..75 }  #in: means within
+  validates :description, length: { in: 10..200 }  #in: means within
 
   belongs_to :supplier
   # def supplier
