@@ -34,5 +34,7 @@ Rails.application.routes.draw do
     get "/countries/:id" => "countries#show"
     patch "/countries/:id" => "countries#update"
     delete "/countries/:id" => "countries#destroy"
+
+    get "/pools" => "pools#index"
   end
 end

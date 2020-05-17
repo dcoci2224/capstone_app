@@ -1,0 +1,5 @@
+@pools.map do |pool|
+  {
+    image_url: pool.image_url,
+  }
+end
