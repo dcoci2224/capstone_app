@@ -1,0 +1,5 @@
+@timelines.map do |timeline|
+  {
+    url: timeline.url,
+  }
+end

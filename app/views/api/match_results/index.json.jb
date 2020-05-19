@@ -1,0 +1,6 @@
+@match_results.map do |match_result|
+  {
+    image_url: match_result.image_url,
+    video_url: match_result.video_url,
+  }
+end

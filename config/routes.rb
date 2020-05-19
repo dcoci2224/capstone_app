@@ -36,5 +36,11 @@ Rails.application.routes.draw do
     delete "/countries/:id" => "countries#destroy"
 
     get "/pools" => "pools#index"
+
+    get "/match_results" => "match_results#index"
+
+    get "/next_rwcs" => "next_rwcs#index"
+
+    get "/timelines" => "timelines#index"
   end
 end

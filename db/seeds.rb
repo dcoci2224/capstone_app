@@ -61,3 +61,9 @@ Country.create!(name: "Canada", nickname: "Canucks", world_ranking: 23, image_ur
 Country.create!(name: "Namibia", nickname: "Welwitschias", world_ranking: 24, image_url: "https://rugbyshirtwatch.files.wordpress.com/2019/09/a1681727-bef4-47fc-9335-d0394e6aeafb.jpg", video_url: "https://youtu.be/udGg7fEGgCI")
 
 Pool.create!(image_url: "https://wpcontent-usarugby.netdna-ssl.com/uploads/2017/11/RWC2019_Match-Schedule-Pool-650x434.jpg")
+
+MatchResult.create!(image_url: "http://www.rugbyunplugged.com/images/RWC2019%20Match%20Schedule.jpg", video_url: "")
+
+NextRwc.create!(video_url: "https://youtu.be/SNFpHHFW1eM", image_url: "https://www.americasrugbynews.com/wp-content/uploads/2017/03/France-2023.jpg")
+
+Timeline.create!(url: "https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1AW5x29S2PknSuzU3HkwqAHLu3vnB9LKHwkZftKlZVEU&font=Default&lang=en&start_at_end=true&timenav_position=top&debug=true&initial_zoom=2&height=650")

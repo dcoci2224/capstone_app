@@ -1,0 +1,1 @@
+render partial: "match_result.json.jb", locals: { match_result: @match_result }

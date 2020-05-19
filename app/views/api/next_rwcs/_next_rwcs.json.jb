@@ -1,0 +1,4 @@
+{
+  video_url: next_rwc.video_url,
+  image_url: next_rwc.image_url,
+}

@@ -1,0 +1,1 @@
+render partial: "next_rwc.json.jb", locals: { next_rwc: @next_rwc }

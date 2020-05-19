@@ -1,0 +1,4 @@
+{
+  image_url: match_result.image_url,
+  video_url: match_result.video_url,
+}
