@@ -1,5 +1,5 @@
 class Api::OrdersController < ApplicationController
-  #before_action :authenticate_user #method from application controller
+  before_action :authenticate_user #method from application controller
 
   def index
     @orders = current_user.orders
